@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="TRES EN RALLA" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="partida" layoutX="386.0" layoutY="120.0" mnemonicParsing="false" onAction="#nuevapartida" prefHeight="33.0" prefWidth="198.0" text="Nuevo Juego" />
+            <GridPane fx:id="panel" alignment="CENTER" gridLinesVisible="true" layoutX="25.0" layoutY="36.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="276.0" prefWidth="289.0" style="-fx-border-color: black;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="97.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="103.0" minWidth="10.0" prefWidth="103.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <TextArea fx:id="mensaje" layoutX="387.0" layoutY="39.0" prefHeight="58.0" prefWidth="195.0" />
+            <Text layoutX="435.0" layoutY="208.0" stroke="BLACK" strokeType="OUTSIDE" text="TURNO:" wrappingWidth="146.3310546875">
+               <font>
+                  <Font size="30.0" />
+               </font></Text>
+            <ImageView fx:id="fichaazul" fitHeight="55.0" fitWidth="65.0" layoutX="437.0" layoutY="223.0">
+               <image>
+                  <Image url="@imagenes/ficha1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="fichaamarilla" fitHeight="59.0" fitWidth="68.0" layoutX="436.0" layoutY="221.0">
+               <image>
+                  <Image url="@imagenes/ficha2.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+  </content>
+</TitledPane>
